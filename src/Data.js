@@ -2,7 +2,8 @@ const D = x => new Decimal(x)
 //create all the variables in a data object for saving
 function getDefaultObject() {
     return {
-        alive: 0,
+        cells: [],
+        aliveCells: 0,
         numRows: 100,
         numColumns: 100,
         time: Date.now(),
