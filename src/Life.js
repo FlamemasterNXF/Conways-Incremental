@@ -25,8 +25,8 @@ class Cell
 
 class GameWorld {
 
-    static numColumns = 75;
-    static numRows = 40;
+    static numColumns = 100;
+    static numRows = 100;
 
     constructor(canvasId) {
         this.canvas = document.getElementById(canvasId);

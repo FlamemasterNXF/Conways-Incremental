@@ -2,6 +2,7 @@ const D = x => new Decimal(x)
 //create all the variables in a data object for saving
 function getDefaultObject() {
     return {
+        alive: 0,
         time: Date.now(),
         currentTab: 1,
     }
