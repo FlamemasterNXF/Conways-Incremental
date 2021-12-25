@@ -8,6 +8,7 @@
     <script defer src="src/Data.js"></script>
     <script defer src="src/Life/Cell.js"></script>
     <script defer src="src/Life/Grid.js"></script>
+    <script defer src="src/Essence.js"></script>
     <script defer src="src/Update.js"></script>
     <script defer src="src/Main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/miscStyles.css" />
@@ -21,6 +22,10 @@
     <div class="flexBox" id="lifeContainer" style="flex-direction: column">
         <canvas id="canvas" width="750" height="400" style="border:4px solid #535353;">Your browser does not support the HTML5 canvas tag.</canvas>
         <div class="generalTexts" id="cellsAlive" style="margin-top: 10px">There are 0 Cells currently alive</div>
+        <div class="generalTexts" id="essence" style="margin-top: 10px">Essence</div>
+    </div>
+    <div class="flexBox" id="settingsContainer">
+        <button class="settingsButtons" onclick="fullReset()">Delete your Savefile</button>
     </div>
 </div>
 </body>

@@ -18,16 +18,23 @@ function cellsLoop(){
         if (data.cells[i].alive) tempAlive++
     }
     data.aliveCells = tempAlive
-    setTimeout( () => {
-        window.requestAnimationFrame(() => (cellsLoop()));
-    })
+}
+function calculationsLoop(){
+    calculateEssenceGain()
 }
 function gameLoop(){
-    lifeLoop()
+    let diff = (Date.now()-data.time)/1000
+    data.time = Date.now()
     cellsLoop()
+    calculationsLoop()
+    increaseEssence(essenceGain*diff)
     updateHTML()
 }
 window.onload = () => {
     createGrid();
-    window.requestAnimationFrame(() => gameLoop());
+    window.requestAnimationFrame(() => lifeLoop());
+    load()
 }
+window.setInterval(function(){
+    gameLoop()
+}, 20);

@@ -2,10 +2,14 @@ const D = x => new Decimal(x)
 //create all the variables in a data object for saving
 function getDefaultObject() {
     return {
+        //cells
         cells: [],
         aliveCells: 0,
         numRows: 100,
         numColumns: 100,
+        //essence
+        essence: 0,
+        //misc
         time: Date.now(),
         currentTab: 1,
     }
@@ -59,9 +63,6 @@ function importSave(){
 window.setInterval(function(){
     save()
 }, 10000);
-window.onload = function (){
-    load()
-}
 //full reset
 function fullReset(){
     exportSave()
