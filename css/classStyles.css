@@ -1,0 +1,22 @@
+.flexBox {
+    display: flex;
+    align-items: center;
+    place-content:center
+}
+.generalTexts{
+    color: white;
+    font-family: DosisLight;
+}
+.layer{
+    position: absolute;
+}
+.navButton{
+    margin-left: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+.settingsButtons{
+    border: 2px solid #545454;
+    background-color: #868686;
+}
