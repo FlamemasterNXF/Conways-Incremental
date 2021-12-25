@@ -3,6 +3,8 @@ const D = x => new Decimal(x)
 function getDefaultObject() {
     return {
         alive: 0,
+        numRows: 100,
+        numColumns: 100,
         time: Date.now(),
         currentTab: 1,
     }
