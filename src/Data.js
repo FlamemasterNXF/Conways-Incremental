@@ -7,8 +7,6 @@ function getDefaultObject() {
         aliveCells: 0,
         numRows: 100,
         numColumns: 100,
-        //essence
-        essence: 0,
         //misc
         time: Date.now(),
         currentTab: 1,

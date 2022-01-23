@@ -8,7 +8,7 @@
     <script defer src="src/Data.js"></script>
     <script defer src="src/Life/Cell.js"></script>
     <script defer src="src/Life/Grid.js"></script>
-    <script defer src="src/Essence.js"></script>
+    <script defer src="src/NewCell.js"></script>
     <script defer src="src/Update.js"></script>
     <script defer src="src/Main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/miscStyles.css" />
@@ -24,6 +24,7 @@
         <div class="generalTexts" id="cellsAlive" style="margin-top: 10px">There are 0 Cells currently alive</div>
     </div>
     <div class="flexBox" id="settingsContainer">
+        <button class="settingsButtons" id="createCell" onclick="createCustomCell()">Bring a Cell to life</button>
         <button class="settingsButtons" onclick="fullReset()">Reset the Simulation</button>
     </div>
 </div>

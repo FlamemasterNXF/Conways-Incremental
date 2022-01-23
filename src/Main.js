@@ -19,15 +19,13 @@ function cellsLoop(){
     }
     data.aliveCells = tempAlive
 }
-function calculationsLoop(){
-    calculateEssenceGain()
+function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
 }
 function gameLoop(){
     let diff = (Date.now()-data.time)/1000
     data.time = Date.now()
     cellsLoop()
-    calculationsLoop()
-    increaseEssence(essenceGain*diff)
     updateHTML()
 }
 window.onload = () => {
