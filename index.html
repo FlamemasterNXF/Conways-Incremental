@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script defer src="src/Internal/Formatting.js"></script>
+    <script defer src="src/Internal/BreakEternity.js"></script>
+    <script defer src="src/Data.js"></script>
+    <script defer src="src/Life/Cell.js"></script>
+    <script defer src="src/Life/Grid.js"></script>
+    <script defer src="src/NewCell.js"></script>
+    <script defer src="src/Update.js"></script>
+    <script defer src="src/Main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/miscStyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/classStyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/idStyles.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" sizes="16x16">
+    <title>Conway's Incremental</title>
+</head>
+<body>
+<div class="layer" id="topLayer">
+    <div class="flexBox" id="lifeContainer" style="flex-direction: column">
+        <canvas id="canvas" width="750" height="400" style="border:4px solid #535353;">Your browser does not support the HTML5 canvas tag.</canvas>
+        <div class="generalTexts" id="cellsAlive" style="margin-top: 10px">There are 0 Cells currently alive</div>
+    </div>
+    <div class="flexBox" id="settingsContainer">
+        <button class="settingsButtons" id="createCell" onclick="createCustomCell()">Bring a Cell to life</button>
+        <button class="settingsButtons" onclick="fullReset()">Reset the Simulation</button>
+    </div>
+</div>
+</body>
+</html>
